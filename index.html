@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Сайт Пиксельные Приключения</title>
+    <!-- Подключаем CSS стили из отдельного файла -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="logo-area">
+        <h1>Pixel Adventures</h1>
+      </div>
+      <div class="header-controls">
+        <button class="btn btn-secondary" onclick="toggleTheme()">🌓 Тема</button>
+        <div class="user-menu-container">
+          <div id="user-badge">Гость</div>
+          <div class="user-menu-content">
+            <button type="button" onclick="registerUser()">Сменить имя 🔄</button>
+            <button type="button" onclick="openSettings()">Настройки ⚙️</button>
+            <button type="button" onclick="userLogout()">Выйти ❌</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="card welcome-text">
+        <p>Добро пожаловать на наш официальный портал!</p>
+        <p>Этот проект полностью посвящён моему YouTube каналу!</p>
+        <p>Здесь собраны самые крутые интерактивные фишки для подписчиков.</p>
+        <div class="action-box">
+          <button id="try-button" class="btn btn-primary" onclick="clickButton()">Попробовать!</button>
+          <button id="register-button" class="btn btn-success" onclick="registerUser()">Зарегистрироваться</button>
+          <button id="login-button" class="btn btn-warning" onclick="loginUser()">Войти</button>
+          <button class="btn btn-info" onclick="shareSite()">Поделиться сайтом 🔗</button>
+        </div>
+      </div>
+
+     <div class="card">
+  <h3>Свежий ролик на канале:</h3>
+  <a href="https://youtube.com" target="_blank" class="video-preview-link">
+    <div class="video-banner">
+      <!-- Теперь картинка будет браться прямо с твоего компьютера -->
+      <img src="preview.jpg" alt="Обложка видео">
+      <div class="play-button-overlay">▶ СМОТРЕТЬ</div>
+    </div>
+  </a>
+</div>
+
+
+
+      <div class="card">
+        <h3>Идея для следующего видео:</h3>
+        <textarea id="feedback-text" placeholder="Напишите вашу идею или крутой челлендж для ролика сюда..."></textarea>
+        <button class="btn btn-primary" onclick="sendFeedback()">Отправить идею</button>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2026 Пиксельные Приключения. Все права защищены.
+    </footer>
+
+    <!-- Подключаем JavaScript логику из отдельного файла -->
+    <script src="script.js"></script>
+  </body>
+</html>
